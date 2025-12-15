@@ -1,33 +1,51 @@
-📘 Prueba Técnica – Sistema de Gestión de Trámites
+## ▶️ Ejecución del Backend
 
-Backend: Java 17 · Spring Boot · Spring Security · JPA
-Arquitectura: DDD (Domain Driven Design)
-Autenticación: JWT
+### Requisitos
 
-🚀 Instrucciones para ejecutar el Backend
-🔧 Requisitos
+- Java 17 o superior  
+- Maven 3.8 o superior  
+- MySQL 8 (opcional H2)  
+- Git  
 
-Java 17+
+### Pasos
 
-Maven 3.8+
+1. Clonar el repositorio
 
-MySQL 8+ (o H2 para pruebas)
+```bash
+git clone https://github.com/NSMG27/pruebatecnica-usco.git
+```
 
-Git
+2. Entrar al proyecto backend
 
-▶️ Pasos
-
-git clone https://github.com/tu-usuario/prueba-tecnica.git
+```bash
 cd prueba-tecnica/backend
+```
+
+3. Compilar el proyecto
+
+```bash
 mvn clean install
+```
+
+4. Ejecutar la aplicación
+
+```bash
 mvn spring-boot:run
+```
 
+📍 El backend quedará disponible en:
 
-El backend quedará disponible en:
-
+```
 http://localhost:8080
+```
 
-📄 Configuración (application.properties)
+---
+
+## ⚙️ Configuración del Backend
+
+Archivo: `application.properties`
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/pruebatecnica
 spring.datasource.username=root
 spring.datasource.password=root
@@ -37,3 +55,7 @@ spring.jpa.show-sql=true
 
 jwt.secret=miClaveSecretaSuperSeguraParaJWT2024DebeSerLargaYCompleja
 jwt.expiration=86400000
+```
+
+---
+
